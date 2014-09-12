@@ -69,7 +69,6 @@ html{
   top:0px;
   left: 0px;
   width: 100%;
-  min-width: 1200px;
   z-index: 1;
 }
 
@@ -82,7 +81,7 @@ html{
 }
 
 #home {
-  background-image: url(images/penguin1.jpg);
+  background-image: url(images/penguin2.jpg);
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -92,20 +91,33 @@ html{
   -webkit-margin-after: 0px;
 }
 
-#home #clients #about #work #contact h1 {
+#home #clients #about #buy #contact h1 {
   margin-top:50px;
 }
 
 #home h1 {
-  margin-top: 52px;
   padding-top: 100px;
-  padding-top: 60px;
   text-align: center;
   color: black;
+  position: relative;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home h2 {
+  font-size: 40px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #about h1 {
-  padding-top: 120px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -121,9 +133,9 @@ html{
 #about p {
   text-align: left;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
+  float: right;
+  padding: 50px 30px 0 0;
+  width: 40%;
   font-size: 19px;
   line-height: 30px;
   letter-spacing: 1px;
@@ -140,7 +152,18 @@ html{
   -webkit-margin-after: 0px;
 }
 
-#work {
+#cover {
+  float: left;
+  width: 50%;
+  padding: 30px 30px;
+}
+
+#cover img {
+padding-left: 4em;
+
+}
+
+#buy {
   background-image: url(images/newboat.jpg);
   background-repeat: no-repeat;
   min-height: 100%;
@@ -152,12 +175,12 @@ html{
   -webkit-margin-after: 0px;
 }
 
-#work h1 {
+#buy h1 {
   padding-top: 120px;
   text-align: center;
 }
 
-#work p {
+#buy p {
   padding: 15px;
   display: block;
   margin-left: auto;
@@ -245,7 +268,7 @@ a:hover {
 }
 
 body.home {
-  background-color: #666060;
+  background-color: white;
   background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
@@ -277,7 +300,7 @@ body {
 }
 */
 
-#work p {
+#buy p {
   clear: right;
   float: right;
   font-size:16px;
@@ -315,7 +338,7 @@ body {
   background-color: rgba(0, 0, 0, .85);
 }
 
-#work ul {
+#buy ul {
   display: block;
   /*overflow: hidden;*/
   width: 900px;
@@ -336,13 +359,13 @@ body {
   filter:alpha(opacity=100); /* For IE8 and earlier */
 }
 
-#work img {
+#buy img {
   width: 200px;
   height: 120px;
   border:1px solid #ffffff;
 }
 
-#work li {
+#buy li {
   width: 200px;
   margin: 0 auto;
   float: right;
@@ -351,7 +374,7 @@ body {
   padding-right: 50px;
 }
 
-#work li:hover {
+#buy li:hover {
 cursor: pointer;
 }
 
@@ -472,14 +495,6 @@ h1 {
   font-size: 60px;
   color: black;
   height: 20px;
-  font-weight: normal;
-}
-
-h2 {
-  font-size: 40px;
-  padding: 10px;
-  text-align: center;
-  color: white;
   font-weight: normal;
 }
 
