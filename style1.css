@@ -190,7 +190,7 @@ body {
 }
 
 #buy {
-  background-color: #E7E2E2;
+  background-color: white;
   margin-top:0px;
   overflow-y:auto;
   height: 50%;
@@ -213,7 +213,7 @@ body {
 }
 
 #retailers {
-  width: 40%;
+  width: 60%;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -234,29 +234,18 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  max-width: 600px;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1em; 
+  font-style: italic;
 }
 
 #reviews {
-  background-image: url(images/orbs.jpg);
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#contact {
-  background-image: url(images/Matt.jpg);
-  background-repeat: no-repeat;
-  min-width: 1024px;
-  min-height: 100%;
-  background-size: cover;
-  margin-top:0px;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-}
 
-#contact h1 {
+#authors h1 {
   padding-top: 100px;
   text-align: center;
   width: 40%;
@@ -357,30 +346,77 @@ a:hover {
 cursor: pointer;
 }
 
+#reviews {
+  height: 50%;
+  background-color: #F0F0F0;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
 
-#reviews ul {
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, .6);
-  display: block;
-  text-align: center;
-  width: 800px;
-  height: 400px;
-  margin-top: 30px;
-  margin: 50px auto 0px auto;
+#reviewbios {
+  background-color: #F0F0F0;
+  width: 85%;
+  height: 40%;
+  margin: 1% auto 1% auto;
 }
 
 #reviews li {
-  display: inline;
-  width: 150px;
-  height: 98px;
-  padding-left: 12px;
-  padding-right: 12px;
+  float: left;
+  width: 30%;
+  padding-left: 1%;
+  padding-right: 1%; 
+  margin-bottom: 1%;
 }
 
 #reviews img {
-  width: 150px;
-  height: 98px;
+  display: block;
+  width: 145px;
+  height: 145px;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
+   background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+#authors {
+  height: 120%;
+  background-color: #F0F0F0;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+
+#authbios {
+  background-color: #F0F0F0;
+  width: 85%;
+  height: 40%;
+  margin: 1% auto 1% auto;
+}
+
+#authbios li {
+  float: left;
+  width: 30%;
+  padding-left: 1%;
+  padding-right: 1%; 
+  margin-bottom: 1%;
+}
+
+#authors img {
+  display: block;
+  width: 145px;
+  height: 145px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+   background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }
 
 h1 {
