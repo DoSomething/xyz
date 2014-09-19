@@ -51,7 +51,7 @@ table {
 /* End of Meyer reset */
 
 /*
-CSS for MattPeters.com
+CSS for XYZFactor.com
 */
 
 html{
@@ -60,9 +60,25 @@ html{
 
 * { margin: 0; padding: 0;}
 
+@font-face {
+    font-family: proxima;
+    src: url(ProximaNova-Reg.otf);
+}
+
+@font-face {
+    font-family: proximabold;
+    src: url(ProximaNova-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: proximasbold;
+    src: url(ProximaNova-Sbold.otf);
+    font-weight: sbold;
+}
+
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+  font-family: "proxima", "proximabold", "proximasbold", Helvetica, Arial, "Lucida Grande", sans-serif; 
   background-color: #ffffff;
   line-height: 150%;
   padding: 0; 
@@ -78,7 +94,7 @@ body {
 }*/
 
 #header {
-  background-color: rgb(78, 76, 76);
+  background-color: rgb(78, 43, 99);
   height: 50px; 
   padding: 0 0 0 0px;
   margin-top: 0px;
@@ -91,7 +107,11 @@ body {
 
 #header li {
   float: right;
-  text-decoration-color: black;
+  text-decoration-color: rgb(78, 43, 99)
+}
+
+.scroll {
+  text-align: center;
 }
 
 #header1 {
@@ -111,7 +131,8 @@ body {
 
 .headbutton {
   text-align: center;
-  width: 31%;
+  padding: 1% 0 1% 0;
+  width: 19%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
@@ -157,18 +178,23 @@ body {
   margin-right: auto;
 }
 
+#about {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+
 #aboutcontent {
-  padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  min-height: 400px;
+  margin-top: 2%;
+  margin-bottom: 2%; 
+  width: 75%;
+  clear: both;
 }
 
 #cover {
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 6%;
   width: 25%;
   clear: right;
   position: relative;
@@ -179,14 +205,14 @@ body {
  }
 
 #description {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
   float: right;
   width: 65%;
   text-align: left;
-  display: inline-block;
-  position: relative;
-  clear: left;
+  display:block;
+  overflow:auto;
+  margin-bottom: 1%;
 }
 
 #buy {
@@ -229,7 +255,7 @@ body {
   text-align: center;
 }
 
-#reviews p {
+.fullreview {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -238,10 +264,31 @@ body {
   font-style: italic;
 }
 
+.bioname {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5em; 
+  font-weight: bold;
+}
+
+#reviews .biotitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1em; 
+  font-style: none;
+}
+
 #reviews {
+  display: inline-block;
   background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
 }
 
 
@@ -271,6 +318,7 @@ a:hover {
   float: right;
   margin: 0px 0 0 0;
   height: 0px;
+  text-align: center;
 }
 
 /*
@@ -336,7 +384,7 @@ a:hover {
 }
 
 #buy li {
-  width: 200px;
+  width: 50%;
   display: inline;
   margin: 0 auto;
   margin-top: 20px;
@@ -347,13 +395,14 @@ cursor: pointer;
 }
 
 #reviews {
-  height: 50%;
+  display: inline-block;
   background-color: #F0F0F0;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
 }
 
 #reviewbios {
+  display: block;
   background-color: #F0F0F0;
   width: 85%;
   height: 40%;
@@ -362,7 +411,7 @@ cursor: pointer;
 
 #reviews li {
   float: left;
-  width: 30%;
+  width: 23%;
   padding-left: 1%;
   padding-right: 1%; 
   margin-bottom: 1%;
@@ -436,7 +485,7 @@ h4 {
   color: white;
   line-height: 1;
   font-weight: normal;
-  text-shadow: 0 0 8px #A09569;
+  text-shadow: 0 0 3px #A09569;
 }
 
 h5 {
@@ -444,7 +493,7 @@ h5 {
   color: white;
   line-height: 1;
   font-weight: normal;
-  text-shadow: 0 0 8px #A09569;
+  text-shadow: 0 0 3px #A09569;
   margin-top: 4%;
 }
 
@@ -461,6 +510,8 @@ h6 {
   height: 100%;
   width: 100%;
 }
+
+
 
 ul {
   list-style-type: none;
