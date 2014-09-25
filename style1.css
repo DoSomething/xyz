@@ -85,6 +85,7 @@ body {
   border: 0;
   height: 100%;
   width: 100%;
+  perspective: 1px;
 }
 
 
@@ -141,14 +142,17 @@ body {
 }
 
 #top {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+
+#topbackground {
   background-image: url(images/penguin6.jpg);
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   background-size: cover;
   margin-top:0px;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
 }
 
 .intro {
@@ -256,28 +260,18 @@ body {
 }
 
 .fullreview {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   font-size: 1em; 
   font-style: italic;
 }
 
 .bioname {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  text-align: left;
   font-size: 1.5em; 
   font-weight: bold;
 }
 
-#reviews .biotitle {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.biotitle {
+  text-align: left;
   font-size: 1em; 
   font-style: none;
 }
@@ -395,6 +389,7 @@ cursor: pointer;
 }
 
 #reviews {
+  width: 100%;
   display: inline-block;
   background-color: #F0F0F0;
   -webkit-margin-before: 0px;
@@ -403,33 +398,28 @@ cursor: pointer;
 
 #reviewbios {
   display: block;
-  background-color: #F0F0F0;
-  width: 85%;
-  height: 40%;
+  width: 75%;
   margin: 1% auto 1% auto;
 }
 
-#reviews li {
-  float: left;
-  width: 23%;
-  padding-left: 1%;
-  padding-right: 1%; 
-  margin-bottom: 1%;
-}
-
 #reviews img {
-  display: block;
-  width: 145px;
-  height: 145px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 50%;
+  margin-top: 3%;
   border: 3px solid white;
-   background-position: 50% 50%;
-    background-repeat: no-repeat;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+}
+
+.imagecont {
+  width: 25%;
+  float: left;
+  display: block;
+}
+
+.textblock {
+  float: right;
+  display: block;
 }
 
 #authors {
@@ -466,6 +456,31 @@ cursor: pointer;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+}
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0px) scale (1);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale (2);
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
 }
 
 h1 {
@@ -520,7 +535,6 @@ ul {
 
 li {
   display: inline;
-  display: block;
   width: 100px;
   margin-top: 10px;
 }
