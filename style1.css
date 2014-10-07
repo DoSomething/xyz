@@ -95,11 +95,11 @@ body {
 }*/
 
 #header {
-  background-color: rgb(78, 43, 99);
+  background-color: #444;
   height: 50px; 
   padding: 0 0 0 0px;
   margin-top: 0px;
-  position:fixed;
+  /*position:fixed;*/
   top:0px;
   left: 0px;
   width: 100%;
@@ -164,7 +164,7 @@ body {
   margin-right: 8%;
 }
 
-#top #reviews #about #buy #contact h1 {
+#top #reviews #about #buy #authors h1 {
   margin-top:50px;
 }
 
@@ -174,10 +174,10 @@ body {
 }
 
 .line-separator {
-  height: 2px;
-  width: 600px;
+  height: 1px;
+  width: 300px;
   margin-top: 30px;
-  background:#717171;
+  background: #444;
   margin-left: auto;
   margin-right: auto;
 }
@@ -223,7 +223,7 @@ body {
   background-color: white;
   margin-top:0px;
   overflow-y:auto;
-  height: 50%;
+  height: 40%;
   width: 100%;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
@@ -242,57 +242,67 @@ body {
   margin-right: auto;
 }
 
-#retailers {
-  width: 60%;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#logos {
-  width: 100%;
-  margin: 0 auto;
-}
-
 #reviews h1 {
   padding-top: 40px;
   text-align: center;
+  color: white;
+}
+
+#reviews .line-separator {
+  background-color: white;
 }
 
 .fullreview {
   font-size: 1em; 
   font-style: italic;
+  display: inline;
+  color: white;
 }
 
 .bioname {
   text-align: left;
   font-size: 1.5em; 
   font-weight: bold;
+  display: inline;
+  color: white;
 }
 
 .biotitle {
   text-align: left;
   font-size: 1em; 
   font-style: none;
+  display: inline;
+  color: white;
 }
 
-#reviews {
-  display: inline-block;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
+.fullreview2 {
+  font-size: 1em; 
+  font-style: italic;
+  display: inline;
+  color: #444;
+}
+
+.bioname2 {
+  text-align: center;
+  font-size: 1.5em; 
+  font-weight: bold;
+  display: inline;
+  color: #444;
+}
+
+.biotitle2 {
+  text-align: center;
+  font-size: 1em; 
+  font-style: none;
+  display: inline;
+  color: #444;
 }
 
 
 #authors h1 {
-  padding-top: 100px;
   text-align: center;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
   color: black;
+  padding-top: 3%;
 }
 
 a {
@@ -370,92 +380,106 @@ a:hover {
 }
 
 #buy img {
-  width: 200px;
-  height: 40px;
-  border:2px solid white;
-  border-radius: 4px;
-  background-color #ECECEC;
+  width: 100%;
 }
 
-#buy li {
+#barnes {
+  width: 49%;
+  display: inline-block;
+}
+
+#amazon {
+  width: 49%;
+  display: inline-block;
+}
+
+.logoimg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#logos {
   width: 50%;
-  display: inline;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-#buy li:hover {
-cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  position: relative;
 }
 
 #reviews {
   width: 100%;
   display: inline-block;
-  background-color: #F0F0F0;
+  background-color: #444;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
 }
 
 #reviewbios {
-  display: block;
-  width: 75%;
-  margin: 1% auto 1% auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 60%;
+  clear: both;
 }
 
 #reviews img {
-  width: 50%;
-  margin-top: 3%;
+  max-width: 95%;
   border: 3px solid white;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .imagecont {
-  width: 25%;
+  width: 15%;
+  padding-bottom: 2%;
   float: left;
-  display: block;
 }
 
 .textblock {
-  float: right;
-  display: block;
+  clear: left;
+  width: 80%;
+  padding-left: 4%;
+  padding-bottom: 4%;
+  position: relative;
+  overflow: auto;
+  display: inline-block;
 }
 
 #authors {
-  height: 120%;
   background-color: #F0F0F0;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
 }
 
-#authbios {
-  background-color: #F0F0F0;
-  width: 85%;
-  height: 40%;
-  margin: 1% auto 1% auto;
-}
-
-#authbios li {
-  float: left;
-  width: 30%;
-  padding-left: 1%;
-  padding-right: 1%; 
-  margin-bottom: 1%;
-}
-
 #authors img {
   display: block;
-  width: 145px;
-  height: 145px;
+  width: 35%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
    background-position: 50% 50%;
     background-repeat: no-repeat;
     border-radius: 50%;
+    border-color: #444
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+}
+
+#authbios {
+  background-color: #F0F0F0;
+  width: 85%;
+  margin: 1% auto 1% auto;
+  clear: both;
+  position: relative;
+}
+
+.bioblock {
+  display: inline-block;
+  width: 27%;
+  padding-left: 3%;
+  padding-right: 3%; 
+  margin-bottom: 1%;
 }
 
 .parallax {
@@ -485,7 +509,7 @@ cursor: pointer;
 
 h1 {
   font-size: 60px;
-  color: black;
+  color: #444;
   height: 20px;
   font-weight: normal;
 }
@@ -526,8 +550,6 @@ h6 {
   width: 100%;
 }
 
-
-
 ul {
   list-style-type: none;
   margin: 0px;
@@ -535,7 +557,6 @@ ul {
 
 li {
   display: inline;
-  width: 100px;
   margin-top: 10px;
 }
 
