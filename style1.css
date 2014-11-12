@@ -132,8 +132,8 @@ body {
 
 .headbutton {
   text-align: center;
-  padding: 1% 0 1% 0;
-  width: 19%;
+  padding: 1px 0 1px 0;
+  width: 100px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
@@ -147,7 +147,7 @@ body {
 }
 
 #topbackground {
-  background-image: url(images/penguin6.jpg);
+  background-image: url(images/penguin_hands_2.jpg);
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -161,7 +161,7 @@ body {
   height: 55%;
   float: right;
   margin-top: 15%;
-  margin-right: 8%;
+  margin-right: 4%;
 }
 
 #top #reviews #about #buy #authors h1 {
@@ -190,8 +190,8 @@ body {
 #aboutcontent {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 2%; 
+  margin-top: 5%;
+  margin-bottom: 5%; 
   width: 75%;
   clear: both;
 }
