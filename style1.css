@@ -130,12 +130,13 @@ body {
 
 #intro {
   display: block;
+  position: relative;
   width: 40%;
   height: 55%;
-  margin-top: 10%;
   float: right;
   margin-top: 15%;
   margin-right: 4%;
+  clear: both;
 }
 
 #header1 {
@@ -189,6 +190,8 @@ body {
 }
 
 #about {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
 }
@@ -198,7 +201,7 @@ body {
   margin-right: auto;
   margin-top: 3%;
   margin-bottom: 5%; 
-  width: 75%;
+  width: 65%;
   clear: both;
 }
 
@@ -218,6 +221,7 @@ body {
   padding-left: 1%;
   padding-right: 1%;
   float: right;
+  line-height: 1.25;
   width: 65%;
   text-align: left;
   display:block;
@@ -226,10 +230,12 @@ body {
 }
 
 #buy {
-  background-color: white;
+  background-color: #F7F7F7;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
   margin-top:0px;
   overflow-y:auto;
-  height: 40%;
+  height: 36%;
   width: 100%;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
@@ -283,9 +289,13 @@ body {
 
 .fullreview2 {
   font-size: 1em; 
-  font-style: italic;
   display: inline;
   color: #444;
+  min-height: 400px;
+}
+
+.fullreview2 p{
+  min-height: 336px;
 }
 
 .bioname2 {
@@ -294,6 +304,7 @@ body {
   font-weight: bold;
   display: inline;
   color: #444;
+  padding: 1%;
 }
 
 .biotitle2 {
@@ -322,7 +333,7 @@ a:hover {
 }
 
 #navigation ul {
-  background-color: black;
+  background-color: ;
   font-size: 1.25em; /*20 / 16 */
   color: white;
   float: right;
@@ -461,7 +472,8 @@ a:hover {
 }
 
 #authors {
-  background-color: #F0F0F0;
+  background-color: white;
+  height: 325%;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
 }
@@ -489,11 +501,12 @@ a:hover {
 }
 
 .bioblock {
-  display: inline-block;
+  float: left;
   width: 27%;
   padding-left: 3%;
   padding-right: 3%; 
   margin-bottom: 1%;
+  margin-top: 1%;
 }
 
 .parallax {
