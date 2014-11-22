@@ -9,6 +9,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="home">
@@ -18,29 +20,30 @@
             <li><a class="scroll" href="#buy">Buy</a></li>
             <li><a class="scroll" href="#reviews">Reviews</a></li>
             <li><a class="scroll" href="#about">About</a></li>
-            <li><a class="scroll" href="#top">Home</a></li>
         </ul>
     </div>
     <div id="top"> 
-        <div class="overlay"></div>
+        <!--<div class="overlay"></div>-->
             <div id="intro">
                 <div id="header1">
-                    <h4>The XYZ Factor</h4>
+                    <div class="fancy_font"><h4>The</h4><br></div>
+                        <h1>XYZ</h1><br>
+                    <div class="fancy_font"><h4>Factor</h4></div>
                 </div>
                 <div id="subhead">
                     <h5>The DoSomething.org guide to creating a culture of impact</h5>
                 </div>
-                <div id="headbutton">
-                    <h6>BUY</h6>
-                </div>
+                <a href="#buy" class="button">
+                        <h6>BUY THE BOOK</h6>
+                </a>
             </div>
     </div>
     <div id="about">
-        <h1>About</h1>
-        <div class="line-separator"></div>
+        <h1>About The Book</h1>
+        <!--<div class="line-separator"></div>-->
         <div id="aboutcontent">
             <div id="cover">
-                <img src="images/cover.jpg">
+                <img src="images/xyz_cover.jpg">
             </div>
             <div id="description">  
                 <p><b>What does it mean to be XYZ?</b><br>
@@ -56,11 +59,10 @@
     <div id="reviews">
         <div class="overlay"></div>
         <div class="background-cover-image">
-            <h1>Reviews</h1>
-                <div class="line-separator"></div>
+            <h1>Smart People Said Some Nice Things</h1>
                 <div id="reviewbios">
                     <div class="imagecont">
-                        <img src="images/alyssa.jpeg">
+                        <img src="images/reviewer/seth.jpg">
                     </div>
                     <div class="textblock">
                         <div class="bioname">
@@ -72,9 +74,10 @@
                         <div class="fullreview">
                             <br><p>"DoSomething.org practices what it preaches in this must read book that provides insights, tips, and examples of how your organization can create a new kind of culture where innovation, accessibility, and transparency are normal."</p>
                         </div>
+                        <div class="line-separator"></div>
                     </div>
                     <div class="imagecont">
-                        <img src="images/alyssa.jpeg">
+                        <img src="images/reviewer/beth.jpg">
                     </div>
                     <div class="textblock">
                         <div class="bioname">
@@ -86,9 +89,10 @@
                         <div class="fullreview">
                             <br><p>"DoSomething.org practices what it preaches in this must-read book that provides insights, tips, and examples of how your organization can create a new kind of culture where innovation, accessibility, and transparency are normal."</p>
                         </div>
+                        <div class="line-separator"></div>
                     </div>
                     <div class="imagecont">
-                        <img src="images/alyssa.jpeg">
+                        <img src="images/reviewer/reid.jpg">
                     </div>
                     <div class="textblock">
                         <div class="bioname">
@@ -100,9 +104,10 @@
                         <div class="fullreview">
                             <br><p>"DoSomething operates like a great Silicon Valley start-up, but in New York City and focused on a social mission of enabling teens to improve the world.  This book demonstrates the strategy, operations, and pure chutzpah by a dedicated organization that creates the world's leading network of teenagers who learn their own abilities and responsibilities in the world.  Whether you are a business seeking new innovative practices, a non-profit seeking use of technology and community, or just interested in social impact -- I recommend this book."</p>
                         </div>
+                        <div class="line-separator"></div>
                     </div>
                     <div class="imagecont">
-                        <img src="images/alyssa.jpeg">
+                        <img src="images/reviewer/neil.jpg">
                     </div>
                     <div class="textblock">
                         <div class="bioname">
@@ -119,24 +124,22 @@
         </div>
     </div>
     <div id="buy">
-        <h1>Go Ahead and Buy This Book.</h1>
-        <div class="line-separator"></div>
+        <h1>Buy This Book Right Now</h1>
         <div id="logos">
             <div id="barnes">
-                <div class="logoimg">
-                    <a href="http://www.amazon.com" target="none"><img src="images/amazon.png"></a>
-                </div>
+                <a href="http://www.barnesandnoble.com/w/the-xyz-factor-nancy-lublin/1120752051?ean=9781941631638" target="none" class="button">
+                    <h6>BARNES & NOBLE</h6>
+                </a>
             </div>
             <div id="amazon">
-                <div class="logoimg">
-                    <a href="http://www.amazon.com" target="none"><img src="images/barnes.png"></a>
-                </div>
+                <a href="http://www.amazon.com/XYZ-Factor-DoSomething-org-Creating-Culture/dp/1941631630/ref=sr_1_1?ie=UTF8&qid=1416694801&sr=8-1&keywords=the+xyz+factor" target="none" class="button">
+                    <h6>AMAZON</h6>
+                </a>
             </div>
         </div>        
     </div>
     <div id="authors">
-             <h1>Authors</h1>
-        <div class="line-separator"></div>
+             <h1>Meet Our Brilliant Authors</h1>
             <div id="authbios">
                 <div class="bioblock">
                     <img src="images/staff_bio/julie.jpg">
