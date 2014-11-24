@@ -94,11 +94,10 @@ body {
 }*/
 
 #header {
-  background-color: #444;
   height: 50px; 
   padding: 0 0 0 0px;
   margin-top: 0px;
-  /*position:fixed;*/
+  position:absolute;
   top:0px;
   left: 0px;
   width: 100%;
@@ -114,6 +113,16 @@ body {
   text-align: center;
 }
 
+#navigation a.scroll {
+  /*font-weight: bold;*/
+  background-color: none;
+  color: none;
+}
+
+#navigation a {
+  color: none;
+}
+
 /*
 #top {
   width: 100%;
@@ -125,9 +134,7 @@ body {
 
 #top{
   background-image: url(images/penguin_hands_2.jpg);
-  background-repeat: no-repeat;
   height: 100%;
-  width: 100%;
   margin-top:1%;
   margin-bottom:1%;
   background-size: cover;
@@ -135,11 +142,14 @@ body {
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
 }
+
+#top img {
+  margin-top: -50px;
+}
   
 
 #intro {
   display: block;
-  position: relative;
   width: 40%;
   float: right;
   margin-top: 15%;
@@ -153,12 +163,10 @@ body {
   margin-right: auto;
   text-align: center;
   width: 100%;
-  position: relative;
 }
 
 #subhead {
   display: inline-block;
-  position: relative;
   width: 100%;
   margin-top: 4%;
   margin-left: auto;
@@ -334,7 +342,7 @@ a.button:hover {
 }
 
 a {
-  color: black;
+  color: transparent;
   text-decoration: none;
 }
 
@@ -352,12 +360,6 @@ a:hover {
   height: 0px;
   text-align: center;
 }
-
-/*
-#navigation li {
-  background-color: black;
-}
-*/
 
 #buy p {
   clear: right;
@@ -386,14 +388,14 @@ a:hover {
 
 #navigation a:hover {
   text-decoration: none;
-  color: #cccccc;
+  color: #5E3577;
   background-color: none;
 }
 
 
 #navigation a:active {
   color: white;
-  background-color: rgba(0, 0, 0, .85);
+  background-color: transparent;
 }
 
 #thumbnails {
