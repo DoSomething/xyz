@@ -256,6 +256,10 @@ a.button:hover {
   font-size: 30px;
 }
 
+#description p {
+  line-height: 1.5;
+}
+
 #buy {
   background-color: #F7F7F7;
   border-top: 2px solid #ddd;
