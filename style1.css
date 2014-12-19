@@ -133,7 +133,7 @@ body {
 */
 
 #top{
-  background-image: url(images/penguin_hands_2.jpg);
+  background-image: url(images/peng_resized.jpg);
   min-height: 100%;
   margin-bottom:1%;
   background-size: cover;
@@ -152,8 +152,8 @@ body {
   display: block;
   width: 40%;
   float: right;
-  margin-top: 15%;
-  margin-right: 4%;
+  margin-top: 10%;
+  margin-right: 15%;
   margin-bottom: 5%;
   clear: both;
 }
@@ -316,7 +316,7 @@ a.button:hover {
 
 .fullreview2 {
   font-size: 1em; 
-  color: #444;
+  color: white;
 }
 
 .fullreview2 p {
@@ -327,7 +327,7 @@ a.button:hover {
   text-align: center;
   font-size: 1.5em; 
   font-weight: bold;
-  color: #444;
+  color: white;
   padding: 1%;
 }
 
@@ -440,7 +440,7 @@ a:hover {
 }
 
 #reviews .background-cover-image {
-  background-image: url(images/q_bck.jpg);
+  background-image: url(images/girl.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -479,7 +479,10 @@ a:hover {
 }
 
 #authors {
-  background-color: white;
+   background-image: url(images/guy.jpg);
+  background-size: cover;
+  background-position: no-repeat;
+  display: table;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
 }
@@ -495,6 +498,10 @@ a:hover {
     border-color: #444
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+}
+
+#authors h1 {
+  color: white;
 }
 
 #authbios {
@@ -513,6 +520,11 @@ a:hover {
   margin-bottom: 1%;
   margin-top: 1%;
   height: 275px;
+}
+
+.bioblock img {
+  border: 3px solid white;
+  border-radius: 50%;
 }
 
 .parallax {
@@ -652,6 +664,11 @@ h3 {
     margin-right: auto;
     width: 100%;
     float: none;
+    margin-top: 25%;
+  }
+
+  #authbios {
+    background-color: transparent;
   }
 
   #cover {
@@ -709,10 +726,6 @@ h3 {
     width: 100%;
     display: block;
     margin-top: 15px;
-  }
-
-  #authbios {
-    background-color: white;
   }
 
   .bioblock {
