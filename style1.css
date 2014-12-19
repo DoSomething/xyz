@@ -330,6 +330,7 @@ a.button:hover {
   font-weight: bold;
   color: white;
   padding: 1%;
+  margin-top: 10px;
 }
 
 .biotitle2 {
