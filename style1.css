@@ -123,6 +123,45 @@ body {
   color: none;
 }
 
+#navigation ul {
+  background-color: ;
+  font-size: 1.25em; /*20 / 16 */
+  float: right;
+  margin: 0px 0 0 0;
+  height: 0px;
+  text-align: center;
+}
+
+#navigation a {
+  font-weight: bold;
+  display: block;
+  width: 100px;
+}
+
+#navigation a:link {
+  color: white;
+  text-decoration: none;
+}
+
+
+#navigation a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+
+#navigation a:hover {
+  text-decoration: none;
+  color: #5E3577;
+  background-color: none;
+}
+
+
+#navigation a:active {
+  color: white;
+  background-color: transparent;
+}
+
 /*
 #top {
   width: 100%;
@@ -357,50 +396,11 @@ a:hover {
   text-decoration: none;
 }
 
-#navigation ul {
-  background-color: ;
-  font-size: 1.25em; /*20 / 16 */
-  float: right;
-  margin: 0px 0 0 0;
-  height: 0px;
-  text-align: center;
-}
-
 #buy p {
   clear: right;
   float: right;
   font-size:16px;
   line-height: 1.5;
-}
-
-#navigation a {
-  font-weight: bold;
-  display: block;
-  width: 100px;
-}
-
-#navigation a:link {
-  color: white;
-  text-decoration: none;
-}
-
-
-#navigation a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-
-#navigation a:hover {
-  text-decoration: none;
-  color: #5E3577;
-  background-color: none;
-}
-
-
-#navigation a:active {
-  color: white;
-  background-color: transparent;
 }
 
 #buy img {
