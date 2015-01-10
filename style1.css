@@ -235,7 +235,7 @@ a.button:hover {
   margin-top: 7%;
 }
 
-#reviews #about #buy #authors h1 {
+#reviews #about #buy #authors #contact h1 {
   margin-top:50px;
 }
 
@@ -526,6 +526,27 @@ a:hover {
 .bioblock img {
   border: 3px solid white;
   border-radius: 50%;
+}
+
+#contact {
+  background-color: #F7F7F7;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  overflow-y:auto;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+
+#button_click {
+    width: 100%;
+    display: block;
+    margin: 15px 0 95px 0;
+}
+
+#contact h1 {
+  padding: 80px 0 25px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .parallax {
