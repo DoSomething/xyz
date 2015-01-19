@@ -303,6 +303,26 @@ a.button:hover {
   line-height: 1.5;
 }
 
+#social {
+  padding-top: 60px;
+}
+
+#twitter_icon img {
+  width: 45px;
+}
+
+#twitter_icon {
+  display: inline-block;
+  padding-left: 6%;
+}
+
+#social_text {
+  display: block;
+  padding-right: 1%;
+  float: right;
+  width: 87%;
+}
+
 /* Buy Section Begins */
 
 #buy {
