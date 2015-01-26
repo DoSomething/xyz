@@ -10,6 +10,14 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-58508997-1', 'auto');
+    ga('send', 'pageview');
+    </script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -55,10 +63,10 @@
         </div>
         <div id="social">
             <div id="twitter_icon">
-                <img src="images/twitter.png">
             </div>
-            <div id="social_text"
-                <p>Take a selfie with your copy of The XYZ Factor, tweet it @XYZFactor and we'll send you a super-secret chapter on DoSomething.org's social media best practices. </p>
+            <div id="social_text">
+                <img src="images/twitter.png">
+                <p>Want to unlock our Social Media chapter? Tweet a selfie of you & your copy of the book to @xyzfactor!</p>
             </div>            
         </div>
     </div>
@@ -160,7 +168,7 @@
     </div>
     <div id="buy">
         <h1>Buy The Book</h1>
-        <div id="logos">
+        <div class="logos" id="buy_logos">
             <div id="barnes">
                 <a href="http://www.barnesandnoble.com/w/the-xyz-factor-nancy-lublin/1120752051?ean=9781941631638" target="none" class="button">
                     <h6>BARNES & NOBLE</h6>
@@ -176,6 +184,24 @@
     <div id="authors">
              <h1>Meet The Authors</h1>
             <div id="auth_bios">
+                <div class="bio_block" id="alyssa">
+                    <img src="images/staff_bio/alyssa.jpg">
+                    <div class="author">
+                        <p>Alyssa Ruderman</p>
+                    </div>
+                    <div class="author_title">
+                        <p>Campaigns Manager - Sex, Violence, & Relationships</p>
+                    </div>
+                </div>
+                <div class="bio_block" id="nancy">
+                    <img src="images/staff_bio/nancy.jpg">
+                    <div class="author">
+                        <p>Nancy Lublin</p>
+                    </div>
+                    <div class="author_title">
+                        <p>CEO</p>
+                    </div>
+                </div>
                 <div class="bio_block">
                     <img src="images/staff_bio/julie.jpg">
                     <div class="author">
@@ -275,32 +301,21 @@
                         <p>Data Scientist</p>
                     </div>
                 </div>
-                <div class="bio_block">
-                    <img src="images/staff_bio/alyssa.jpg">
-                    <div class="author">
-                        <p>Alyssa Ruderman</p>
-                    </div>
-                    <div class="author_title">
-                        <p>Campaigns Manager - Sex, Violence, & Relationships</p>
-                    </div>
-                </div>
-                <div class="bio_block">
-                    <img src="images/staff_bio/nancy.jpg">
-                    <div class="author">
-                        <p>Nancy Lublin</p>
-                    </div>
-                    <div class="author_title">
-                        <p>CEO</p>
-                    </div>
-                </div>
             </div>
     </div>
-    <div id="contact">
-        <h1>Media Inquiries</h1>
+    <div class="logos" id="contact">
+        <h1>GET AT US</h1>
+        <div id="contact_text">
+            <p>We want to hear from you.  Reach out to us with questions or if you want to learn more about making your company XYZ.</p>
         <div id="contact_button">
             <div id="button_click">
                 <a href="mailto:CWormsley@dosomething.org?Subject=XYZ Factor" target="none" class="button">
-                    <h6>CONTACT US</h6>
+                    <h6>MEDIA INQUIRIES</h6>
+                </a>
+            </div>
+            <div id="tmi">
+                <a href="http://www.tmiagency.org" target="none" class="button">
+                    <h6>WORK WITH US</h6>
                 </a>
             </div>
         </div>        
