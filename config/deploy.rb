@@ -12,7 +12,7 @@ end
 
 set :user, "dosomething"
 set :group, "dosomething"
-set :use_sudo, false
+set :use_sudo, true
 
 set :repository, "."
 set :scm, :none
